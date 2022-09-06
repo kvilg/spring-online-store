@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" th:href="@{/css/mainStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/product.css}">
+    <link rel="stylesheet" th:href="@{/css/sach_slaider.css}">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container position_relative">
+            <div class="header_left"><a class="noA" href="/">GitarGir</a></div>
+            <div class="header_right">
+                <nav class="header_nav">
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a" href="/catalog">Каталог</a>
+                    </div>
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a" href="">Заказы</a>
+                    </div>
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a" href="">Карзина</a>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="getElForTemp" th:id="${productNow}"></div>
+
+    <section class="product_container">
+        <div class="container">
+            <div class="product_container_main">
+                <div class="product_i_main">
+                    <div class="disp_flex_slider" id="disp_flex_slider">
+
+                    </div>
+
+                    <button class="btn_sach_gitar">поиск</button>
+                </div>
+                
+                <div class="" id="inNewParam">
+
+                </div>
+
+                
+
+
+
+                <div class="product_next" id="product_next" >
+                    
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer_kontakt">
+        <div class="container position_relative">
+            <div class="kontakt_text">Котакты</div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript" th:src="@{/js/imgGet.js}"></script>
+
+    <script type="text/javascript" th:src="@{/js/sach_slaider.js}"></script>
+    
+    <script type="text/javascript" th:src="@{/js/setTemplatesJson.js}"></script>
+
+    <script type="text/javascript" th:src="@{/js/chekc_next_list.js}"></script>
+
+    <script type="text/javascript" th:src="@{/js/gitarGetAll.js}"></script>
+
+
+
+
+
+  
+
+</body>
+
+</html>

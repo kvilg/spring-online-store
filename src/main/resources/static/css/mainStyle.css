@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+}
+
+.noA {
+    text-decoration: none;
+    color: #000000;
+}
+
+.disp_flex {
+    display: flex;
+}
+
+.margin_0 {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1500px;
+}
+
+.display_inline-block {
+    display: inline-block;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.marg_r_30 {
+    margin-right: 30px;
+}
+
+
+/*header*/
+
+.header {
+    background-color: #C4C4C4;
+    display: block;
+    height: 6vh;
+}
+
+.header_left {
+    position: relative;
+    left: 0;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.header_right {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    margin-top: 1.5%;
+}
+
+.header_nav {}
+
+.header_nav_a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.header_nav_a:not(:hover):after {
+    transform: scalex(0);
+}
+
+.header_nav_a:after,
+.header_nav_a>button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background: #000000;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+
+/*Section_main*/
+
+.section_main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section_main_l_logo {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    width: 50%;
+}
+
+.section_main_r_logo {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+.section_main_text_conteiner {
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    margin-right: 20%;
+    padding: 10%;
+}
+
+.section_main_icon_conteiner {
+    margin-left: 20%;
+}
+
+.section_main_text_1 {
+    font-size: 36px;
+    margin-bottom: 2%;
+}
+
+.section_main_text_2 {
+    font-size: 36px;
+    margin-bottom: 2%;
+}
+
+.section_main_text_3 {}
+
+
+/*main_slider*/
+
+.main_slider {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #202020;
+}
+
+.main_slider_container {
+    width: 100%;
+    background-color: #C4C4C4;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.main_slider_move {
+    display: flex;
+    transition: 2.2s;
+}
+
+.main_slider_item {
+    min-width: 100%;
+    height: 30vw;
+    background-color: #C4C4C4;
+}
+
+.main_slider_btn {
+    margin-top: 3%;
+    display: flex;
+}
+
+.msin_slider_dtn_i {
+    margin-right: 2%;
+    margin-left: 2%;
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 3vw;
+    border-radius: 10px;
+}
+
+.main_slider_item_img1 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/intro.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.main_slider_item_img2 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/kolleksion.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.main_slider_item_img3 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/secshon_all.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.main_slider_item_img4 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/wotch_intro.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+
+/*discounts_slider*/
+
+.discounts_slider {
+    background-color: #C4C4C4;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.discounts_slider_container {
+    overflow: hidden;
+    display: inline-block;
+    width: 90%;
+}
+
+.discounts_slider_move {
+    display: flex;
+    transition: .2s;
+}
+
+.discounts_slider_item {
+    height: 14vw;
+    background-color: #C4C4C4;
+    position: relative;
+}
+
+.discounts_slider_item_contant {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 90%;
+    height: 100%;
+    background-color: #202020;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.discounts_slider_left {
+    display: inline-block;
+    width: 20px;
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    height: 20px;
+    transform: rotate(-45deg);
+    user-select: none;
+    margin-bottom: 6.5vw;
+}
+
+.discounts_slider_right {
+    display: inline-block;
+    width: 20px;
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    height: 20px;
+    transform: rotate(135deg);
+    user-select: none;
+    margin-bottom: 6.5vw;
+}
+
+
+/*footer_kontakt*/
+
+.footer_kontakt {
+    background-color: #202020;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.kontakt_text {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+

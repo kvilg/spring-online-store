@@ -1,0 +1,35 @@
+/*catalog*/
+
+.catalog {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.catalog_container {
+    padding-top: 2%;
+    background-color: #C4C4C4;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.catalog_textMain {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 0.5%;
+}
+
+.catalog_blockI {
+    width: 22%;
+    display: inline-block;
+    height: 20vw;
+    background-color: #e7e7e7;
+    margin: 3%;
+}
+
+.catalog_blockI {
+    border-radius: 10px;
+}
+
+.catalog_container {
+    border-radius: 10px;
+}

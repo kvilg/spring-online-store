@@ -1,0 +1,159 @@
+/*product*/
+
+.product_container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.product_container_main {
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.product_i {
+    background-color: #e7e7e7;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 2%;
+    display: flex;
+}
+
+.product_i_main {
+    background-color: #e7e7e7;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 2%;
+    display: block;
+}
+
+.product_img {
+    display: block;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.product_info {
+    display: block;
+    width: 78%;
+}
+
+.product_name {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.product_name_description {
+    color: #707070;
+    width: 70%;
+    margin-bottom: 1%;
+}
+
+.product_name_characteristic {
+    display: block;
+}
+
+.btn_product_characteristic {
+    display: block;
+    width: 10px;
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    height: 10px;
+    transform: rotate(-135deg);
+    user-select: none;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.box_sahc {
+    display: inline-block;
+    width: 40%;
+}
+
+.box_sahc_y {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    
+}
+
+.dox_flex {
+    display: flex;
+    
+}
+
+.marg_bott {
+    margin-bottom: 10px;
+}
+
+.product_next {
+    justify-content: center;
+    display: flex;
+}
+
+.nam_next {
+    margin: 0px 0.5%;
+    cursor: pointer;
+    transition: .2s;
+}
+.non_nam_next{
+    margin: 0px 0.5%; 
+}
+
+.nam_next:hover {
+    margin: 0px 0.5%;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.not_pointer {
+    margin: 0px 0.5%;
+}
+
+.aktiv {
+    color: antiquewhite;
+}
+
+.btn_new_templats_product{
+    border-radius: 10px;
+    border: solid #000000 1px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 10px;
+    color: #000000;
+    transition: .3s;
+}
+
+.btn_new_templats_product:hover{
+    border-radius: 10px;
+    border: solid #ffffff 1px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.product_img_wid{
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+}
+
+.product_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product_img_slid{
+    width: 40%;
+}
+.product_img_slid_src{
+    width: 100%;
+  
+}
+
+.product_price{
+    width: 40%;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+<body>
+    <input type="file" id="file" />
+    <script language="javascript">
+
+        var idProduct = 1111;
+        var imgBlob;
+        var mainImg = true;
+
+        var arr = [];
+
+        function myFunction() {
+           
+            var file = document.getElementById('file').files[0];
+            var reader  = new FileReader();
+
+            console.log("dffdg");
+
+            getBase64(file);
+
+            reader.onload = function(e)  {
+            
+                var image = document.createElement("img");
+                // the result image data
+                image.src = e.target.result;
+                document.body.appendChild(image);
+                
+                
+
+                //postImg(blobInStr);
+            }
+            reader.readAsDataURL(file);
+        }
+        
+
+
+        document.querySelector('#file').addEventListener('change', event => {
+            myFunction();
+
+
+           
+        })
+
+        function getBase64(file) {
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function () {
+                postImg(reader.result);
+            };
+            reader.onerror = function (error) {
+                console.log('Error: ', error);
+            };
+        }
+
+        function postImg(result){
+
+            
+
+            var json = JSON.stringify({
+            idProduct: +idProduct,
+            imgBlob: result,
+            mainImg:  mainImg
+            });
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", '/postImg', true);
+
+            xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+            xhr.send(json);
+
+            xhr.onreadystatechange = function() {
+                console.log(xhr.responseText);
+            }
+        }
+        
+    
+    </script>
+</body>
+</html> 
+

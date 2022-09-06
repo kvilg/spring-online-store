@@ -1,0 +1,75 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/mainStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/catalog.css}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container position_relative">
+            <div class="header_left"><a class="noA" href="/">GitarGir</a></div>
+            <div class="header_right">
+                <nav class="header_nav">
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a" href="/catalog">Каталог</a>
+                    </div>
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a"  href="">Заказы</a>
+                    </div>
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a"  href="/">Карзина</a>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="catalog">
+        <div class="container">
+            <div class="catalog_container">
+                <div class="catalog_textMain">
+                    товары
+                </div>
+
+                <div class="catalog_blockI">
+                    1 <a class="productI" href="/product/gitar">гитары</a>
+                </div>
+                <div class="catalog_blockI">
+                    2 <a class="productI" href="/product/percussion">ударные</a>
+                </div>
+                <div class="catalog_blockI">
+                    3<a class="productI" href="/product/keyboards">клавишные</a>
+                </div>
+                <div class="catalog_blockI">
+                    4<a class="productI" href="/product/microphones">микрафоны</a>
+                </div>
+                <div class="catalog_blockI">
+                    5<a class="productI" href="/product/headphones">наушники</a>
+                </div>
+                <div class="catalog_blockI">
+                    6<a class="productI" href="/product/studio_equipment">студийная апаратура</a>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer_kontakt">
+        <div class="container position_relative">
+            <div class="kontakt_text">Котакты</div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
